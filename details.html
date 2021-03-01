@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style = "text-align: center; font-size: 20px;">
+<h1 style="color: brown;"> STUDENT DETAILS </h1>
+Enter name: <input id = "name">
+<br><br>
+Enter email : <input id = "email">
+<br><br>
+Enter branch : <input id = "branch">
+<br><br>
+<button onclick = "details()">SUBMIT</button>
+<p id = "res"></p><br>
+<p id = "res1"></p><br>
+<p id = "res2"></p><br>
+<script>
+    let details = () =>{
+name = document.getElementById("name").value;
+document.getElementById("res").innerHTML = "The name is "+name ;
+email = document.getElementById("email").value;
+document.getElementById("res1").innerHTML = "The email is "+email ;
+branch = document.getElementById("branch").value;
+document.getElementById("res2").innerHTML = "The branch is "+branch;
+    };
+</script>
+</body>
+</html>
+
+ 
